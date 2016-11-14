@@ -1,0 +1,33 @@
+<div class="row">
+  <div class"col-md-12">
+   <h1>End Point de productos</h1>
+   <h2>{{title}}</h2>
+<!--
+   <div class="row">
+    <div class="col-md-12">
+    <form action="/products" method="POST">
+    <label for="name">Name</label>
+    <input id="name" type="text" name="name">
+    <br>
+    <label for="photo">Photo</label>
+    <input type="text" id="photo" name="photo">
+    <br>
+    <label for="stock">Stock</label>
+    <input type="text" name="stock" id="stock">
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button> 
+    </form>
+    </div>
+   </div>
+-->
+   <div class="row">
+     {{#each products}}
+     <div> 
+       <p>{{this.name}}</p>
+       <img src="{{this.photo}}" class="img-responsive" alt="{{this.name}}">
+       <p>Stock: {{this.stock}}</p>
+     </div> 
+     {{/each}}
+    </div>
+  </div>
+</div>
