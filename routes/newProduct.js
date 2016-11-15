@@ -4,14 +4,9 @@ var Product = require('../models/Product.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  /*var animalList = ['cat', 'doc', 'bird', 'bear'];
-  res.render('products', {
-    title: 'PRODUCTS',
-    animals: animalList
-  });*/
-res.render('newProduct', {
-        title: 'NEWPRODUCTS',
-      });
+  res.render('newProduct', {
+    title: 'NEWPRODUCTS',
+  });
 });
 
 router.post('/', function(req,res){
